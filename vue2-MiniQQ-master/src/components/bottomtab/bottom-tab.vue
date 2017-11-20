@@ -2,25 +2,25 @@
   <mu-bottom-nav :value="bottomNav"
                  @change="handleChange"
                  class="bottom-tab">
-  
+
     <mu-bottom-nav-item value="message"
-                        title="home"
+                        title="主页"
                         icon="chat_bubble_outline"
                         :iconClass="[ isActive[0]&&'color-b' ]"
                         :titleClass="[ isActive[0]&&'color-b' ]" />
-  
+
     <mu-bottom-nav-item value="friends"
-                        title="community"
+                        title="登录/注册"
                         icon="people"
                         :iconClass="[ isActive[1]&&'color-b' ]"
                         :titleClass="[ isActive[1]&&'color-b' ]" />
-  
+
     <mu-bottom-nav-item value="discover"
-                        title="join in"
+                        title="社区"
                         icon="explore"
                         :iconClass="[ isActive[2]&&'color-b' ]"
                         :titleClass="[ isActive[2]&&'color-b' ]" />
-  
+
   </mu-bottom-nav>
 </template>
 

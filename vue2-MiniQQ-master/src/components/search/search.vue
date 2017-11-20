@@ -1,22 +1,22 @@
 <template>
   <div class="search">
     <mu-appbar :zDepth="0">
-  
+
       <mu-icon-button icon="arrow_back"
                       slot="left"
                       @click="showSearch" />
-  
+
       <mu-text-field class="appbar-search-field"
-                     slot="default"
-                     hintText="...."
-                     v-model="value"
-                     @input="input" />
+                      slot="default"
+                      hintText="...."
+                       v-model="value"
+                       @input="input" />
       <mu-icon-button icon="search"
                       slot="right" />
     </mu-appbar>
-  
+
     <mu-list>
-      <mu-sub-header>在输入框中，输入名字或者Phone搜索好友</mu-sub-header>
+      <mu-sub-header>在输入框中，输入关键字</mu-sub-header>
       <div v-for="item of friend">
         <mu-list-item :title="item.name"
                       @click="showPersonindex_x(item._id)">
@@ -27,7 +27,7 @@
         </mu-list-item>
       </div>
     </mu-list>
-  
+
   </div>
 </template>
 <script>
@@ -97,3 +97,4 @@ export default {
 
 
 </style>
+

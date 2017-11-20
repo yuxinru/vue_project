@@ -2,26 +2,25 @@
   <div class="top-wrap">
     <mu-appbar class="top-nav"
                :zDepth="0">
-  
+
       <!--等待添加弹出层按钮-->
       <mu-avatar slot="left"
                  :src="avatar"
                  :size="30"
                  @click="showSidebar_x(true)" />
-  
+
       <div slot="default"
            class="title">
-        <div class="title-item">{{headerTitle}}</div>
+        <div class="title-item">~ Cobby ~ World ~</div>
       </div>
-  
       <!--<mu-icon-button icon="search"
                               slot="right" />-->
       <mu-icon slot="right"
-               value="search"
+               value="2.搜索"
                color="#2e2c6b"
                @click="showSearch" />
     </mu-appbar>
-  
+
   </div>
 </template>
 
@@ -67,6 +66,6 @@ export default {
         font-weight: 500
         background: color-b
         color: color-w
-    
+
 </style>
 
